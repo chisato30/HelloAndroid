@@ -10,9 +10,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/hello"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="85dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/tapHere"
@@ -21,4 +23,13 @@
         android:text="@string/tap_here"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="220dp" />
+
+    <ImageView
+        android:id="@+id/lion"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="357dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
